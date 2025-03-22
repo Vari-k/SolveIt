@@ -4,10 +4,17 @@
 	<head>
 		<title>SolveIT Captch Solver by Atharv & Varijaksh</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> -->
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}} "/>
 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+        <meta name="theme-color" content="#000000" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <script defer src="{{ url_for('static', filename='js/app.js') }}"></script>
+        
 	<body class="is-preload">
+        
 
 		<!-- Wrapper -->
 			<div id="wrapper">
