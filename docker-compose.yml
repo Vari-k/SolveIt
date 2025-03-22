@@ -3,7 +3,7 @@ version: "3.9"
 services:
   flask_api:
     build:
-      context: ../flaskapi
+      context: ./flaskapi
       dockerfile: Dockerfile
     container_name: captcha_flask_api
     ports:
