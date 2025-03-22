@@ -3,17 +3,17 @@ version: "3.9"
 services:
   flask_api:
     build:
-      context: ../api
+      context: ../flaskapi
       dockerfile: Dockerfile
     container_name: captcha_flask_api
     ports:
       - "5000:5000"
     volumes:
-      - ../api:/app
+      - ../flaskapi:/app
       - ../model:/model
     environment:
       - FLASK_ENV=development
-      - MODEL_PATH=/model/captcha_model.pt
+      # - MODEL_PATH=/model/captcha_model.pt
     networks:
       - backend-network
 
