@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  flask_api:
+    build:
+      context: ../api
+      dockerfile: Dockerfile
+    container_name: captcha_flask_api
+    ports:
+      - "5000:5000"
+    volumes:
+      - ../api:/app
+      - ../model:/model
+    environment:
+      - FLASK_ENV=development
+      - MODEL_PATH=/model/captcha_model.pt
+    networks:
+      - backend-network
+
+networks:
+  backend-network:
+    driver: bridge
