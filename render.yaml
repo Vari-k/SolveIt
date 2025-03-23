@@ -24,9 +24,9 @@ services:
     plan: free
     repo: https://github.com/aup2007/SolveIt
     branch: main
-    dockerfilePath: flaskapi/Dockerfile
     build:
-      contextPath: flaskapi                
+      contextPath: flaskapi
+      dockerfilePath: Dockerfile               
     envVars:
       - key: FLASK_ENV
         value: development
