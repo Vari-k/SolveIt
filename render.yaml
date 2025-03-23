@@ -1,3 +1,22 @@
+# services:
+#   - type: web
+#     name: captcha-flask-api
+#     env: docker
+#     plan: free
+#     repo: https://github.com/aup2007/SolveIt
+#     branch: main
+#     dockerfilePath: flaskapi/Dockerfile
+#     buildFilter:
+#       paths:
+#         - flaskapi/**
+#     envVars:
+#       - key: FLASK_ENV
+#         value: development
+#       - key: PORT
+#         value: 5000
+
+
+
 services:
   - type: web
     name: captcha-flask-api
