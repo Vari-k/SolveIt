@@ -22,7 +22,7 @@ services:
     name: captcha-flask-api
     env: docker
     plan: free
-    repo: https://github.com/Vari-k/SolveIt
+    repo: https://github.com/aup2007/SolveIt
     branch: main
     dockerContext: flaskapi
     dockerfilePath: Dockerfile              
